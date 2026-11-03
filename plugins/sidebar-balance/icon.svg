@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Balance wallet">
+  <rect x="5" y="13" width="54" height="38" rx="10" fill="#2E6B4F"/>
+  <path d="M5 24h54" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="33" y="28" width="26" height="17" rx="8.5" fill="#F3F7F4"/>
+  <circle cx="46" cy="36.5" r="3.5" fill="#2E6B4F"/>
+  <circle cx="17.5" cy="37" r="5.5" fill="none" stroke="#F3F7F4" stroke-width="2.5"/>
+  <path d="M17.5 34.2v3.6M15.6 36.4h3.8" stroke="#F3F7F4" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

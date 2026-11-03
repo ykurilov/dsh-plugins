@@ -1,0 +1,7 @@
+# DOM control for the right-Sidebar browser panel.
+#
+# `impl.js` is imported by activation with a fresh query, so an edit plus a
+# profile recomposition (or a restart) always runs the current code.
+- insert:
+    - id: panel-dom
+      name: dsh-panel-dom

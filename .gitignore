@@ -1,0 +1,5 @@
+node_modules/
+*.bak
+*.bak-*
+package.json.tmp-*
+.DS_Store

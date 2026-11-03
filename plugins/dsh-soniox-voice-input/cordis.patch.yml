@@ -1,0 +1,10 @@
+- insert:
+    # Host half: mints short-lived Soniox temporary API keys so the long-lived
+    # key never reaches the browser. Config overrides, all optional:
+    #   model: stt-rt-v5            real-time model id
+    #   languageHints: [ru, en]     language hints sent with every stream
+    #   maxSessionDurationSeconds: 900  cap for one dictation session
+    #   apiKey: snx_...            inline key (prefer apiKeyFile or SONIOX_API_KEY)
+    #   apiKeyFile: ~/.codex/secrets/soniox-api-key.txt
+    - id: soniox-voice-input
+      name: dsh-soniox-voice-input

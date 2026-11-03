@@ -1,0 +1,11 @@
+# The sidebar header shows no brand lockup and no empty band under it.
+#
+# The shipped official brand occupants are disabled here; this bundle fills the
+# same two seats with nothing, and its Client half collapses the emptied row so
+# "New session" and the navigation start right under the window controls.
+- id: ui-brand-official
+  disabled: true
+
+- insert:
+    - id: sidebar-brandless
+      name: '@local/dsh-sidebar-brandless'

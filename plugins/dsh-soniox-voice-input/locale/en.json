@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Soniox Voice Input",
+    "description": "Adds a microphone button to the composer that transcribes speech in real time with Soniox and inserts the text into the draft."
+  },
+  "title": "Dictate with Soniox",
+  "starting": "Connecting to Soniox…",
+  "recording": "Listening…",
+  "finishing": "Finishing transcript…",
+  "stop": "Stop dictation",
+  "cancel": "Cancel dictation",
+  "insert": "Insert text",
+  "dismiss": "Dismiss",
+  "empty": "No speech recognized",
+  "conflict": "The draft changed — the rest of the transcript is kept for explicit insertion",
+  "denied": "Microphone access was denied",
+  "unavailable": "Soniox voice input is unavailable",
+  "connectionFailed": "Could not reach Soniox",
+  "notConfigured": "No Soniox API key. Save it to {file}",
+  "stopSend": "Stop and send",
+  "send": "Send"
+}

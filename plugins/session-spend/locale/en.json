@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Spend",
+    "description": "Shows an estimated money spend of the current Session in the line under the message input."
+  }
+}

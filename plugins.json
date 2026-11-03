@@ -1,0 +1,61 @@
+{
+  "plugins": [
+    {
+      "id": "locale-ru",
+      "package": "@local/dsh-locale-ru",
+      "dir": "plugins/dsh-locale-ru",
+      "title": "Русский интерфейс",
+      "summary": "Переводит меню, настройки и подписи DeepSeek Harness на русский язык.",
+      "default": true,
+      "requires": []
+    },
+    {
+      "id": "sidebar-balance",
+      "package": "@local/sidebar-balance",
+      "dir": "plugins/sidebar-balance",
+      "title": "Баланс в сайдбаре",
+      "summary": "Показывает баланс аккаунта DeepSeek строкой в подвале левой панели, над строкой аккаунта.",
+      "default": true,
+      "requires": ["вход в аккаунт DeepSeek в приложении"]
+    },
+    {
+      "id": "session-spend",
+      "package": "@local/session-spend",
+      "dir": "plugins/session-spend",
+      "title": "Расход сессии",
+      "summary": "Показывает примерный расход денег на текущую сессию под полем ввода сообщения.",
+      "default": true,
+      "requires": []
+    },
+    {
+      "id": "sidebar-brandless",
+      "package": "@local/dsh-sidebar-brandless",
+      "dir": "plugins/sidebar-brandless",
+      "title": "Сайдбар без логотипа",
+      "summary": "Убирает логотип и надпись из верхней части левой панели и поднимает навигацию выше.",
+      "default": true,
+      "requires": []
+    },
+    {
+      "id": "panel-dom",
+      "package": "dsh-panel-dom",
+      "dir": "plugins/dsh-panel-dom",
+      "title": "Управление браузером в панели",
+      "summary": "Инструмент sidebar_browser: агент открывает страницы в правой панели «Браузер», читает их и кликает по элементам.",
+      "default": true,
+      "requires": ["десктопное приложение DeepSeek Harness (не веб-версия в браузере)"]
+    },
+    {
+      "id": "soniox-voice-input",
+      "package": "dsh-soniox-voice-input",
+      "dir": "plugins/dsh-soniox-voice-input",
+      "title": "Голосовой ввод Soniox",
+      "summary": "Кнопка микрофона в поле сообщения: речь распознаётся и вставляется в черновик.",
+      "default": false,
+      "requires": [
+        "ключ Soniox",
+        "разрешение на микрофон в системе"
+      ]
+    }
+  ]
+}

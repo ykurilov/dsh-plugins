@@ -1,0 +1,3 @@
+- insert:
+    - id: session-spend
+      name: '@local/session-spend'

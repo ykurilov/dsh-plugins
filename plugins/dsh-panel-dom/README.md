@@ -58,11 +58,12 @@ then toggle the bundle (or restart) to apply.
 - `navigate` goes through the panel's address bar while it is open, so the toolbar and the React controller stay in sync. With the panel closed it falls back to loading the guest
   directly, and only then does the toolbar keep the previous address.
 - Screenshots are OS-level: `<webview>` has no `capturePage`, and a native webview never paints
-  into the page's canvas, so the Client measures the guest rectangle in screen points and the
-  Host runs `screencapture -R` on it, then stores the PNG as an attachment. Consequences: the
-  panel must be visible and on the active Space, macOS Screen Recording permission is required
-  for the DSH app, the image is the visible viewport (no full-page stitch), and another window
-  overlapping the panel is captured as-is.
+  into the page's canvas, so the Client measures the guest rectangle in screen points together
+  with the device pixel ratio and the Host captures that rectangle — `screencapture -R` on macOS,
+  PowerShell `System.Drawing` (DPI-aware) on Windows — then stores the PNG as an attachment.
+  Consequences: the panel must be visible and on the active Space, macOS needs Screen Recording
+  permission for the DSH app, the image is the visible viewport (no full-page stitch), and another
+  window overlapping the panel is captured as-is.
 - The panel stays a sandboxed guest: stored logins of the main browser, downloads, modal native
   dialogs and cross-origin browser APIs remain with Browser Control / Playwright.
 - Popups, downloads, stored logins and cross-origin browser APIs stay outside the sandboxed

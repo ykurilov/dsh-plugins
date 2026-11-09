@@ -8,7 +8,7 @@
 
 ```bash
 node install.mjs --list   # что есть
-node install.mjs --plugins=locale-ru,sidebar-balance,session-spend
+node install.mjs --plugins=sidebar-balance,session-spend
 ```
 
 Подробности и порядок действий — в [INSTALL.md](INSTALL.md). Готовый промпт для агента —
@@ -18,14 +18,13 @@ node install.mjs --plugins=locale-ru,sidebar-balance,session-spend
 
 | id | Что делает | Нужно |
 |---|---|---|
-| `locale-ru` | Русский язык интерфейса: меню, настройки, подписи | — |
 | `sidebar-balance` | Баланс аккаунта DeepSeek строкой в подвале сайдбара | вход в аккаунт DeepSeek |
 | `session-spend` | Примерный расход денег на текущую сессию под полем ввода | — |
 | `sidebar-brandless` | Убирает логотип из верхней части сайдбара и поднимает навигацию | — |
 | `panel-dom` | Инструмент `sidebar_browser`: агент открывает страницы в панели «Браузер», читает и кликает | десктопное приложение, не веб-версия |
 | `soniox-voice-input` | Кнопка микрофона в поле сообщения, распознавание речи | ключ Soniox, доступ к микрофону |
 
-По умолчанию подборка считается «базовой» без голосового ввода: `locale-ru`, `sidebar-balance`,
+По умолчанию подборка считается «базовой» без голосового ввода: `sidebar-balance`,
 `session-spend`, `sidebar-brandless`, `panel-dom`.
 
 ## Требования
@@ -41,7 +40,7 @@ node install.mjs --plugins=locale-ru,sidebar-balance,session-spend
 
 | Плагин | macOS | Windows |
 |---|---|---|
-| `locale-ru`, `sidebar-balance`, `session-spend`, `sidebar-brandless` | да | да |
+| `sidebar-balance`, `session-spend`, `sidebar-brandless` | да | да |
 | `panel-dom` | да | да, включая `screenshot` (снимает через PowerShell) |
 | `soniox-voice-input` | да | да, нужно разрешение на микрофон в параметрах Windows |
 
@@ -68,7 +67,7 @@ node install.mjs --plugins=locale-ru,sidebar-balance,session-spend
 
 Папку репозитория нельзя удалять или переносить: плагины подключены ссылкой.
 
-Удалить поставленное: `node install.mjs --remove=locale-ru,panel-dom`.
+Удалить поставленное: `node install.mjs --remove=panel-dom`.
 
 ## Ограничения
 

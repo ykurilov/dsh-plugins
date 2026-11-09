@@ -4,7 +4,7 @@
  *
  * Запуск (Node 18+; подойдёт и Node из рантайма самого DeepSeek Harness):
  *   node install.mjs --list
- *   node install.mjs --plugins=locale-ru,sidebar-balance,session-spend
+ *   node install.mjs --plugins=sidebar-balance,session-spend
  *   node install.mjs --all
  *   node install.mjs --plugins=panel-dom --dry-run
  *

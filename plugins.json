@@ -1,15 +1,6 @@
 {
   "plugins": [
     {
-      "id": "locale-ru",
-      "package": "@local/dsh-locale-ru",
-      "dir": "plugins/dsh-locale-ru",
-      "title": "Русский интерфейс",
-      "summary": "Переводит меню, настройки и подписи DeepSeek Harness на русский язык.",
-      "default": true,
-      "requires": []
-    },
-    {
       "id": "sidebar-balance",
       "package": "@local/sidebar-balance",
       "dir": "plugins/sidebar-balance",

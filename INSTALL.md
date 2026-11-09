@@ -52,7 +52,7 @@ node install.mjs --list
 ## 3. Установите выбранное
 
 ```bash
-node install.mjs --plugins=locale-ru,sidebar-balance,session-spend
+node install.mjs --plugins=sidebar-balance,session-spend
 ```
 
 Скрипт сам: находит профиль `desktop`, дописывает `link:`-зависимости и `dsh.profile.bundles`
@@ -80,7 +80,6 @@ node install.mjs --plugins=locale-ru,sidebar-balance,session-spend
 
 | Плагин | Что должно появиться |
 |---|---|
-| `locale-ru` | Интерфейс на русском: меню, настройки, подписи |
 | `sidebar-balance` | Внизу слева, над строкой аккаунта, строка с балансом (`¥…` или `$…`) |
 | `session-spend` | Под полем ввода, в полосе статистики, плашка «Потрачено ≈ $…» |
 | `sidebar-brandless` | Логотип и надпись в верхней части сайдбара исчезли, «Новая сессия» выше |
@@ -125,14 +124,14 @@ node install.mjs --plugins=locale-ru,sidebar-balance,session-spend
 ## 8. Удаление
 
 ```bash
-node install.mjs --remove=locale-ru,panel-dom
+node install.mjs --remove=panel-dom
 ```
 
 Скрипт уберёт зависимости и записи из `bundles`, пересоберёт `node_modules` и уберёт ссылки.
 Если плагины больше не нужны все:
 
 ```bash
-node install.mjs --all --remove=locale-ru,sidebar-balance,session-spend,sidebar-brandless,panel-dom,soniox-voice-input
+node install.mjs --all --remove=sidebar-balance,session-spend,sidebar-brandless,panel-dom,soniox-voice-input
 ```
 
 `--all --remove` не поддерживается намеренно: удаляйте по списку, чтобы видеть, что уходит.
